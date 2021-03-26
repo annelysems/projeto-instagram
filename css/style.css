@@ -114,21 +114,61 @@ body {
 }
 
 .app-download {
-    height: 6rem;
-    width: 15rem;
+    height: 100%;
+    width: 100%;
     background-size: cover;
 }
 
 .app-download:nth-child(1) {
     background-image: url(../img/app-store.png);
+    width: 170px;
+    height: 50px;
 }
 
 .app-download:nth-child(2) {
     background-image: url(../img/google-play.png);
+    width: 170px;
+    height: 50px;
 }
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
+    }
+
+    .downs {
+        width: 120%;
+    }
+}
+
+@media (max-width: 650px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-account {
+        width: 100%;
+    }
+
+    .downs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .app-download {
+        margin: 5px;
+    }
+
+    .login-info {
+        border: none;
+    }
+
+    body {
+        background-color: white;
     }
 }
